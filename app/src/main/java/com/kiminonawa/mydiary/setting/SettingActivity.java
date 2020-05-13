@@ -76,9 +76,9 @@ public class SettingActivity extends AppCompatActivity
     long start = Calendar.getInstance().getTimeInMillis();
     Gson gson = new Gson();
     // Serialization
-    outState.putString("themeManager", gson.toJson(themeManager));
-    outState.putString("isThemeFirstRun", gson.toJson(isThemeFirstRun));
-    outState.putString("isLanguageFirstRun", gson.toJson(isLanguageFirstRun));
+//    outState.putString("themeManager", gson.toJson(themeManager));
+//    outState.putString("isThemeFirstRun", gson.toJson(isThemeFirstRun));
+//    outState.putString("isLanguageFirstRun", gson.toJson(isLanguageFirstRun));
     outState.putString("tempMainColorCode", gson.toJson(tempMainColorCode));
     outState.putString("profileBgFileName", gson.toJson(profileBgFileName));
     outState.putString("isAddNewProfileBg", gson.toJson(isAddNewProfileBg));
@@ -105,10 +105,10 @@ public class SettingActivity extends AppCompatActivity
     long start = Calendar.getInstance().getTimeInMillis();
     Gson gson = new Gson();
     // Deserialization
-    themeManager = gson.fromJson(savedInstanceState.getString("themeManager"), ThemeManager.class);
-    isThemeFirstRun = gson.fromJson(savedInstanceState.getString("isThemeFirstRun"), boolean.class);
-    isLanguageFirstRun =
-        gson.fromJson(savedInstanceState.getString("isLanguageFirstRun"), boolean.class);
+//    themeManager = gson.fromJson(savedInstanceState.getString("themeManager"), ThemeManager.class);
+//    isThemeFirstRun = gson.fromJson(savedInstanceState.getString("isThemeFirstRun"), boolean.class);
+//    isLanguageFirstRun =
+//        gson.fromJson(savedInstanceState.getString("isLanguageFirstRun"), boolean.class);
     tempMainColorCode = gson.fromJson(savedInstanceState.getString("tempMainColorCode"), int.class);
     profileBgFileName =
         gson.fromJson(savedInstanceState.getString("profileBgFileName"), String.class);
