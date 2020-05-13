@@ -28,7 +28,7 @@
             android:value="AIzaSyDVL96wY3-Xqe8Rjt065Low6hMCOjW-Qd4" />
 
         <activity
-            android:name=".init.InitActivity"
+            android:name=".init.InitActivity" android:alwaysRetainTaskState="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme_NoActionBar_FullScreen">
             <intent-filter>

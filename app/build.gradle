@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 29
     buildToolsVersion '25.0.1'
     defaultConfig {
         applicationId "com.kiminonawa.mydiary"
         minSdkVersion 17
-        targetSdkVersion 25
+        targetSdkVersion 29
 
         // versionName rule
         // version.yyMMDD_BuildCount_OPTION ,
@@ -77,4 +77,5 @@ dependencies {
 
 
     compile project(path: ':zoomable')
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
